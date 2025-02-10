@@ -2226,7 +2226,7 @@ void AbstractLogView::drawTextArea( QPaintDevice* paintDevice )
     static const QBrush markedMatchBrush = QBrush( "violet" );
 
     static constexpr int SeparatorWidth = 1;
-    static constexpr int BulletAreaWidth = 11;
+    static constexpr int BulletAreaWidth = 14;
     static constexpr int ContentMarginWidth = 1;
     static constexpr int LineNumberPadding = 3;
 
@@ -2518,8 +2518,8 @@ void AbstractLogView::drawTextArea( QPaintDevice* paintDevice )
 
         // Then draw the bullet
         painter->setPen( Qt::black );
-        const int circleSize = 3;
-        const int arrowHeight = 4;
+        const int circleSize = 5;
+        const int arrowHeight = 6;
         const int middleXLine = BulletAreaWidth / 2;
         const int middleYLine = yPos + ( fontHeight / 2 );
 
